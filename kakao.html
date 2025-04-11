@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header1 {
+            width: 100%;
+            height: 49px;
+            border-bottom: 1px solid lightgrey;
+            box-sizing: border-box;
+        }
+
+        .header1 > div {
+            width: 1280px;
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .header2 {
+            width: 1280px;
+            height: 103px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        .header2 img {
+            width: 180px;
+            height: 21px;
+            margin: 30px 0 0 570px; 
+        }
+
+        .header2 > span {
+            color: #767676;
+            font-size: 12px;
+            margin: 40px 0 0 635px; 
+        }
+
+        .header3 {
+            width: 100%;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        .header3 > div {
+            position: relative;
+            width: 1280px;
+            height: 48px;
+            margin: 0 auto;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .header3  a {
+            font: 15px;
+            color: #000;
+        }
+
+        .header3  input {
+            position: absolute;
+            right: 0;
+            width: 218px;
+            height: 34px;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid lightgrey;
+        }
+
+        main {
+            width: 1280px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .banner {
+            margin: 20px 0;
+        }
+
+        .new {
+            width: 100%;
+            height: 400px;
+        }
+
+        .new > div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .new > p {
+          color: #222;
+          font-size: 20px;
+          font-weight: 700;
+          margin: 10px 0;
+        }
+
+
+        .new > div img {
+            display: block;
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .new > div p {
+            font-size: 16px;
+            color: #2e2e2e;
+            margin: 5px 0;
+        }
+
+        .new > div p:nth-of-type(2) {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .free_deliver {
+            display: block;
+            width: 70px;
+            height: 25px;
+            background-color: rgb(0 0 0 / 6%);
+            border-radius: 2px;
+            color: #2e2e2e;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+        }
+
+        .category {
+            width: 100%;
+            height: 300px;
+            border-top: 8px solid #f7f7f7;
+            border-bottom: 8px solid #f7f7f7;
+            box-sizing: border-box;
+            margin-top: 80px;
+            padding: 15px;
+        }
+
+        .category img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 10px 73px;
+        }
+
+        .best {
+            width: 100%;
+            height: 995px;
+        }
+
+        .best > p {
+            color: #222;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        .best a {
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .best img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .best a p {
+            font-size: 20px;
+            color: #2e2e2e;
+            margin: 5px 0;
+        }
+
+        .best p:nth-child(2) {
+            font-size: 22px;
+            font-weight: 900;
+        }
+
+        .best p:nth-child(3) {
+            font-size: 18px;
+            color: #767676;
+        }
+
+        .rank {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            color: #2e2e2e;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: #f4f5f6;
+            margin-bottom: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <section class="header1">
+            <div></div>
+        </section>
+        <section class="header2">
+            <a href="#"><img src="/images/logo.jpg"></a>
+            <span>스토어정보</span>
+        </section>
+        <section class="header3">
+            <div> 
+                <a href="#">홈</a>
+                <a href="#">베스트</a>
+                <a href="#">블랙춘</a>
+                <a href="#">카테고리</a>
+                <a href="#">기획전</a>
+                <a href="#">공지사항</a>
+                <input type="text" placeholder="카카오프렌즈 상품검색">
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="banner">
+            <a href="#"><img src="/images/black_chunsik.gif"></a>
+        </div>
+        <div class="new">
+            <p>NEW 새로 나왔어요</p>
+            <div>
+                <div>
+                    <a href="#"><img src="/images/chunsik_pillow.jpg"></a>
+                    <p>블랙춘 핑크리본 필로우_춘식이</p>
+                    <p>33,000원</p>
+                    <span class="free_deliver">무료배송</span>
+                </div>
+                <div>
+                    <a href="#"><img src="/images/chunsik_keyring.jpg"></a>
+                    <p>블랙춘 미니키링인형_춘식이</p>
+                    <p>12,000원</p>
+                </div>
+                <div>
+                    <a href="#"><img src="/images/chunsik_figure.jpg"></a>
+                    <p>블랙춘 피규어키링_춘식이</p>
+                    <p>14,000원</p>
+                </div>
+                <div>
+                    <a href="#"><img src="/images/chunsik_phone.jpg"></a>
+                    <p>블랙춘 휴대폰 거치대 피규어_춘식이</p>
+                    <p>14,000원</p>
+                </div>
+                <div>
+                    <a href="#"><img src="/images/chunsik_strap.jpg"></a>
+                    <p>블랙춘 휴대폰 클리너 스트랩_춘식이</p>
+                    <p>75,00원</p>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <a href="#"><img src="/images/new'.jpg"></a>
+            <a href="#"><img src="/images/chunsik.jpg"></a>
+            <a href="#"><img src="/images/ryan.jpg"></a>
+            <a href="#"><img src="/images/joledi.jpg"></a>
+            <a href="#"><img src="/images/sale.jpg"></a><br>
+            <a href="#"><img src="/images/keyring.jpg"></a>
+            <a href="#"><img src="/images/car.jpg"></a>
+            <a href="#"><img src="/images/clothe.jpg"></a>
+            <a href="#"><img src="/images/picnic.jpg"></a>
+            <a href="#"><img src="/images/matsamchun.jpg"></a>
+        </div>
+        <div class="best">
+            <p>BEST 제일 잘나가요</p>
+            <div>
+                <a>
+                    <img src="/images/1.png">
+                    <div>
+                        <p>먼작귀X카카오프렌즈 키링인형 토끼_춘식이</p>
+                        <p>13,000원</p>
+                        <p>★95% 만족 | 리뷰 20</p>
+                    </div>
+                </a>
+                <a>
+                    <img src="/images/2.jpg">
+                    <div>
+                        <p>쬬르디 랜덤 아크릴 참</p>
+                        <p>13,000원</p>
+                        <p>★95% 만족 | 리뷰 20</p> 
+                    </div>
+                </a>
+                <a>
+                    <img src="/images/3.jpg">
+                    <div>
+                        <p>[풀세트] 맛삼춘 랜덤피규어 _춘식이</p>
+                        <p>13,000원</p>
+                        <p>★95% 만족 | 리뷰 20</p>
+                    </div>
+                </a>
+                <a>
+                    <img src="/images/4.jpg">
+                    <div>
+                        <p>넷플릭스 오징어 게임X카카오 프렌즈 LED 키링_춘식이</p>
+                        <p>13,000원</p>
+                        <p>★95% 만족 | 리뷰 20</p>
+                    </div>
+                </a>
+                <a>   
+                    <img src="/images/5.jpg">
+                    <div>
+                        <p>냥냥 차량용 미니 데코피규어 세트</p>
+                        <p>13,000원</p>
+                        <p>★95% 만족 | 리뷰 20</p>
+                    </div>
+                </a>
+                <a href="#" class="rank">베스트 랭킹상품 더보기 ></a>
+            </div>
+        </div>
+        <div class="restock"></div>
+        <div class="product"></div>
+        <div class="notice"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>
